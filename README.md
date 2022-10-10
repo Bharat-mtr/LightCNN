@@ -1,6 +1,8 @@
 
 # Light CNN for Deep Face Recognition, in PyTorch
-A [PyTorch](http://pytorch.org/) implementation of [A Light CNN for Deep Face Representation with Noisy Labels](https://arxiv.org/abs/1511.02683) from the paper by Xiang Wu, Ran He, Zhenan Sun and Tieniu Tan.  The official and original Caffe code can be found [here](https://github.com/AlfredXiangWu/face_verification_experiment).  
+A [PyTorch](http://pytorch.org/) implementation of [A Light CNN for Deep Face Representation with Noisy Labels](https://arxiv.org/abs/1511.02683) from the paper by Xiang Wu, Ran He, Zhenan Sun and Tieniu Tan.  The official and original Caffe code can be found [here](https://github.com/AlfredXiangWu/face_verification_experiment).
+
+[DAGsHub Repository](https://dagshub.com/Bharat-mtr/LightCNN)
 
 ### Table of Contents
 - <a href='#updates'>Updates</a>
@@ -35,7 +37,7 @@ A [PyTorch](http://pytorch.org/) implementation of [A Light CNN for Deep Face Re
 
 ## Datasets
 - Download face dataset such as  CASIA-WebFace, VGG-Face and MS-Celeb-1M.
-	- The MS-Celeb-1M clean list is uploaded: [Baidu Yun](http://pan.baidu.com/s/1gfxB0iB), [Google Drive](https://drive.google.com/file/d/0ByNaVHFekDPRbFg1YTNiMUxNYXc/view?usp=sharing).
+	- The MS-Celeb-1M clean list is uploaded: [DAGsHub Link](https://dagshub.com/Bharat-mtr/LightCNN/src/master/data).
 - All face images are converted to gray-scale images and normalized to **144x144** according to landmarks. 
 - According to the five facial points, we not only rotate two eye points horizontally but also set the distance between the midpoint of eyes and the midpoint of mouth(ec_mc_y), and the y axis of midpoint of eyes(ec_y) .
 - The aligned LFW images are uploaded on [Baidu Yun](https://pan.baidu.com/s/1eR6vHFO).
@@ -81,7 +83,7 @@ python extract_features.py --resume=/path/to/your/model \
 - The model of LightCNN-29 is released on [Google Drive](https://drive.google.com/file/d/0ByNaVHFekDPRMGlLWVBhbkVGVm8/view).
 - The model of LightCNN-29 v2 is released on [Google Drive](https://drive.google.com/open?id=1Jn6aXtQ84WY-7J3Tpr2_j6sX0ch9yucS).
 - The features of [lfw](https://drive.google.com/open?id=0ByNaVHFekDPRbDV4cEtWSVl3d0k) and [megaface](https://drive.google.com/open?id=0ByNaVHFekDPRZXhQejRwOUtDYm8) of LightCNN-9 are released. 
-- The model of LightCNN v4 is released on [Google Drive](https://drive.google.com/file/d/1zFB8RmxeS00Nbq2fM0EoME15RIHtVOqn/view?usp=sharing).
+- The model of LightCNN v4 is released on [DAGsHub Link](https://dagshub.com/Bharat-mtr/LightCNN/src/master/model/LightCNN-V4_checkpoint.pth).
   - The detailed structure of LightCNN v4 is shown in light_cnn_v4.py
   - The input is an aligned 128*128 **BGR** face image.
   - The input pixel value is normalized by mean ([0.0, 0.0, 0.0]) and std ([255.0, 255.0, 255.0]).
